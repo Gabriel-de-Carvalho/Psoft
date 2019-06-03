@@ -1,17 +1,18 @@
 package com.crudExample.demo.rest.model;
 
 import lombok.Data;
-import org.hibernate.annotations.Entity;
+import org.hibernate.annotations.Entity	;
 import org.springframework.data.annotation.Id;
 
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 
 
 @Data
 @Entity
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationTYPE.IDENTIFY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private String nome;
@@ -23,7 +24,7 @@ public class Product {
     }
 
     public Product(String name, String description, float price){
-        this.nome = nome;
+        this.nome = name;
         this.description = description;
         this.price = price;
     }

@@ -1,5 +1,6 @@
 package com.crudExample.demo.rest.service;
 
+import com.crudExample.demo.exception.ProductNotFoundException;
 import com.crudExample.demo.rest.dao.ProductDao;
 import com.crudExample.demo.rest.model.Product;
 import org.springframework.stereotype.Service;

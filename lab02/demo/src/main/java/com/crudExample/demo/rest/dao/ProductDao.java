@@ -1,6 +1,8 @@
 package com.crudExample.demo.rest.dao;
 
 import com.crudExample.demo.rest.model.Product;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
